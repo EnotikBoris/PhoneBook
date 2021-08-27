@@ -1,0 +1,29 @@
+﻿<Window x:Class="PhoneBook.RemoweButtonWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhoneBook"
+        mc:Ignorable="d"
+        Title="RemoweButtonWindow" Height="150" Width="400">
+    <Grid>
+
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+       
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <TextBlock Grid.Row="0" Grid.Column="0">Введите номер</TextBlock>
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="Number"> +7 ( ) </TextBox>
+
+        <Button Grid.Column="1" Grid.Row="1" Click="Button_Click">удалить</Button>
+    </Grid>
+</Window>
